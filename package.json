@@ -33,8 +33,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint \"**/*.{ts,tsx,scss}\" --ignore-path ./.eslintignore",
-    "lint:fix": "eslint \"**/*.{ts,tsx,scss}\" --ignore-path ./.eslintignore --quiet --fix"
+    "lint": "yarn format && eslint \"**/*.{ts,tsx,scss}\" --ignore-path ./.eslintignore",
+    "lint:fix": "eslint \"**/*.{ts,tsx,scss}\" --ignore-path ./.eslintignore --quiet --fix",
+    "format": "prettier \"**/*.{ts,tsx,scss}\" --ignore-path ./.prettierignore --write"
   },
   "eslintConfig": {
     "extends": [
