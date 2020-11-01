@@ -15,7 +15,7 @@ const Loaders: React.FC<props> = ({ loaders }) => {
   const [selectedLoader, setSelectedLoader] = useState<ILoader>();
 
   const onLoaderClick = (id: number) => {
-    setSelectedLoader(loaders[id]);
+    setSelectedLoader(loaders.filter((loader: ILoader) => loader.id === id)[0]);
   };
 
   return (

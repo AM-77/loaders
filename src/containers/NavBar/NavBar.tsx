@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
+import ITag from '../../types/ITag';
+
 import './style.scss';
 
-type tag = {
-  name: string;
-  selected: boolean;
+type props = {
+  filterLoaders: (tags: ITag[]) => void;
 };
 
-const NavBar: React.FC = () => {
-  const [tags, setTags] = useState<tag[]>([
+const NavBar: React.FC<props> = ({ filterLoaders }) => {
+  const [tags, setTags] = useState<ITag[]>([
     {
       name: 'dot',
       selected: false,
@@ -30,9 +32,13 @@ const NavBar: React.FC = () => {
     },
   ]);
 
+  useEffect(() => {
+    filterLoaders(tags);
+  }, [tags]);
+
   const selectTag = (tagName: string) => {
     setTags(
-      tags.map(({ name, selected }: tag) => {
+      tags.map(({ name, selected }: ITag) => {
         if (name === tagName) {
           return { name, selected: !selected };
         }
@@ -100,6 +106,10 @@ const NavBar: React.FC = () => {
       </div>
     </div>
   );
+};
+
+NavBar.propTypes = {
+  filterLoaders: PropTypes.func.isRequired,
 };
 
 export default NavBar;
