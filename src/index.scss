@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Share+Tech+Mono&family=Open+Sans&display=swap');
+@import './assets/scss/constants.scss';
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, 'Open Sans', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Droid Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $light;
+  color: $dark;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  font-family: 'Share Tech Mono', 'Open Sans', 'Roboto', 'Courier New';
+  text-decoration: none;
+  width: fit-content;
+  color: $dark;
+  transition: color 150ms ease-in-out;
+
+  &:hover {
+    color: $main;
+  }
+}
+
+button,
+input {
+  font-family: -apple-system, 'Open Sans', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Droid Sans', sans-serif;
+  color: $dark;
+}
