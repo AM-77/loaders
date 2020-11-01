@@ -1,0 +1,123 @@
+@import '../../assets/scss/constants.scss';
+
+.model-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(21, 21, 21, 0.85);
+
+  .model {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    max-width: 95%;
+    max-height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 25px 15px;
+    background-color: $white;
+    border: 2px solid $main;
+    box-shadow: 0 0 3px $main;
+
+    code[class*='language-'],
+    pre[class*='language-'] {
+      font-size: 13px;
+    }
+
+    .infos {
+      display: flex;
+      align-items: center;
+
+      .credits {
+        b {
+          font-weight: 700;
+          color: $dark;
+        }
+
+        a {
+          font-weight: 700;
+          text-decoration: underline;
+          transition: color 150ms ease-in-out;
+
+          &:hover {
+            color: $main;
+          }
+        }
+      }
+
+      .close {
+        display: flex;
+        width: 20px;
+        height: 20px;
+        margin-left: auto;
+        cursor: pointer;
+        border: none;
+        background: none;
+
+        svg {
+          width: 100%;
+          height: 100%;
+          fill: $dark;
+          transition: fill 150ms ease-in-out;
+
+          &:hover {
+            fill: $main;
+          }
+        }
+      }
+    }
+
+    .demo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 150px;
+      margin: 50px 0;
+    }
+
+    .code {
+      display: flex;
+      flex-direction: column;
+      .html,
+      .css {
+        margin-top: 25px;
+
+        .title {
+          display: flex;
+
+          h4 {
+            font-weight: 700;
+            font-size: 17px;
+          }
+
+          button {
+            width: 20px;
+            height: 20px;
+            margin-left: auto;
+            cursor: pointer;
+            border: none;
+            background: none;
+
+            svg {
+              width: 100%;
+              height: 100%;
+              fill: $dark;
+              transition: fill 150ms ease-in-out;
+
+              &:hover {
+                fill: $main;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
