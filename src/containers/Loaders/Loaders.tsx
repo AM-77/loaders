@@ -22,7 +22,7 @@ const Loaders: React.FC<props> = ({ loaders }) => {
     <div className="loaders-container">
       <h1 className="title">Pure CSS Loaders</h1>
       <p className="desc">
-        A collection of an open source, animated, simple and easy to use CSS
+        A collection of open source, animated, simple and easy to use CSS
         loaders.
       </p>
       <div className="laoders">
