@@ -10,6 +10,7 @@ const Loader: React.FC<props> = ({ id, html }) => {
   return (
     <div
       className={`loader loader-${id}`}
+      // eslint-disable-next-line
       dangerouslySetInnerHTML={{ __html: html }}
     />
   );
