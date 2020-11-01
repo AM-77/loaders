@@ -1,0 +1,18 @@
+@import '../../assets/scss/constants.scss';
+
+.loader-card {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $dark;
+  cursor: pointer;
+  margin: 5px;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    border-color: $main;
+    box-shadow: 0 0 2px $main;
+  }
+}
