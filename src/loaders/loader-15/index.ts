@@ -1,0 +1,70 @@
+import ILoader from '../../types/ILoader';
+import './style.scss';
+
+const loader: ILoader = {
+  id: 15,
+  html: `<div class="loader"></div>`,
+  style: `.loader {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    border-top-color: #3bffc4;
+    border-radius: 50%;
+    -webkit-animation: spin 650ms linear infinite;
+            animation: spin 650ms linear infinite;
+  }
+
+  .loader::before,
+  .loader::after {
+    display: inline-block;
+    position: absolute;
+    left: -3px;
+    top: 2px;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top-color: #3bffc4;
+    border-radius: 50%;
+    -webkit-transform: rotate(240deg);
+        -ms-transform: rotate(240deg);
+            transform: rotate(240deg);
+  }
+
+  .loader::before {
+    left: 3px;
+    top: 2px;
+    -webkit-transform: rotate(120deg);
+        -ms-transform: rotate(120deg);
+            transform: rotate(120deg);
+  }
+
+
+  @-webkit-keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+
+
+  @keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }`,
+  tags: ['other', 'circle'],
+};
+
+export default loader;
