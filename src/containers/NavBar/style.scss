@@ -37,7 +37,9 @@
 
   .links {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     margin-left: auto;
 
     .tag {
@@ -125,5 +127,29 @@
       100% 100%,
       0 100%
     );
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .nav-bar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 10px 5px;
+
+    .logo {
+      width: 90px;
+      height: 30px;
+      margin-bottom: 10px;
+    }
+
+    .links {
+      margin: 0;
+
+      .tag {
+        margin-bottom: 5px;
+      }
+    }
   }
 }

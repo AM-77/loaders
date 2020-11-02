@@ -28,3 +28,10 @@
     margin-top: 50px;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .loaders-container {
+    margin-top: 100px;
+    padding: 20px;
+  }
+}
