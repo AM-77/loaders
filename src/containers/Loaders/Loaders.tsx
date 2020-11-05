@@ -25,7 +25,7 @@ const Loaders: React.FC<props> = ({ loaders }) => {
         A collection of open source, animated, simple and easy to use CSS
         loaders.
       </p>
-      <div className="laoders">
+      <div className={`loaders ${selectedLoader ? 'open' : ''}`}>
         {loaders.map((loader) => (
           <LoaderCard onClick={onLoaderClick} loader={loader} key={loader.id} />
         ))}

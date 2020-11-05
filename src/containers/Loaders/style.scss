@@ -21,11 +21,16 @@
     color: $dark;
   }
 
-  .laoders {
+  .loaders {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
+
+    &.open {
+      height: calc(100vh - 300px);
+      overflow: hidden;
+    }
   }
 }
 
