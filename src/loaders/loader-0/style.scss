@@ -5,11 +5,11 @@
     height: 60px;
     background: #2196f3;
     border-radius: 50%;
-    -webkit-animation: spin 3500ms ease-in-out infinite;
-    animation: spin 3500ms ease-in-out infinite;
+    -webkit-animation: spin-0 3500ms ease-in-out infinite;
+    animation: spin-0 3500ms ease-in-out infinite;
   }
 
-  @-webkit-keyframes spin {
+  @-webkit-keyframes spin-0 {
     0%,
     100% {
       -webkit-animation-timing-function: ease-in-out;
@@ -34,7 +34,7 @@
     }
   }
 
-  @keyframes spin {
+  @keyframes spin-0 {
     0%,
     100% {
       -webkit-animation-timing-function: ease-in-out;
