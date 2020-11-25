@@ -10,8 +10,10 @@
   border-bottom: 1px solid $grey;
   overflow: hidden;
   padding: 0 25px;
-  background-color: $light;
+  background-color: $transWhite;
   box-shadow: $box-shadow;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
 
   .logo {
     position: relative;

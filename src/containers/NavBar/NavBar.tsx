@@ -27,6 +27,10 @@ const NavBar: React.FC<props> = ({ filterLoaders }) => {
       selected: false,
     },
     {
+      name: 'single-div',
+      selected: false,
+    },
+    {
       name: 'other',
       selected: false,
     },
