@@ -50,7 +50,7 @@ const loader: ILoader = {
                  transform: perspective(140px) rotateZ(-180deg);
      }
  }`,
-  tags: ['other'],
+  tags: ['other', 'single-div'],
 };
 
 export default loader;

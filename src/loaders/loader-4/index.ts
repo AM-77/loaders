@@ -62,7 +62,7 @@ const loader: ILoader = {
               transform: rotateZ(360deg)
     }
   }`,
-  tags: ['disc', 'other'],
+  tags: ['disc', 'other', 'single-div'],
 };
 
 export default loader;

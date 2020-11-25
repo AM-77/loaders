@@ -115,7 +115,7 @@ const loader: ILoader = {
               transform: translateX(-20px) translateY(-20px) ;
     }
   }`,
-  tags: ['dot'],
+  tags: ['dot', 'single-div'],
 };
 
 export default loader;

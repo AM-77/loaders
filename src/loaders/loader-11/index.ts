@@ -50,7 +50,7 @@ const loader: ILoader = {
         transform: rotateZ(360deg)
     }
 }`,
-  tags: ['circle', 'dot'],
+  tags: ['circle', 'dot', 'single-div'],
 };
 
 export default loader;

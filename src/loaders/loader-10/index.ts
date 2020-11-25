@@ -41,7 +41,7 @@ const loader: ILoader = {
               transform: rotateZ(360deg)
     }
   }`,
-  tags: ['circle'],
+  tags: ['circle', 'single-div'],
 };
 
 export default loader;

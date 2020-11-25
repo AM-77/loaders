@@ -61,7 +61,7 @@ const loader: ILoader = {
               transform: rotateY(3600deg);
     }
   }`,
-  tags: ['disc'],
+  tags: ['disc', 'single-div'],
 };
 
 export default loader;

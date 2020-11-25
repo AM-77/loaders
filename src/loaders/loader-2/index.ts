@@ -58,7 +58,7 @@ const loader: ILoader = {
               transform: scale(1);
     }
   }`,
-  tags: ['disc'],
+  tags: ['disc', 'single-div'],
 };
 
 export default loader;

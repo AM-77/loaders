@@ -69,7 +69,7 @@ const loader: ILoader = {
     }
 
   }`,
-  tags: ['other', 'circle'],
+  tags: ['other', 'circle', 'single-div'],
 };
 
 export default loader;

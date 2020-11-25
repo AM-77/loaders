@@ -90,7 +90,7 @@ const loader: ILoader = {
               transform: rotate(-360deg)
     }
   }`,
-  tags: ['dot', 'circle'],
+  tags: ['dot', 'circle', 'single-div'],
 };
 
 export default loader;
