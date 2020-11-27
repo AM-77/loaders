@@ -9,11 +9,11 @@
     border: 3px solid #ffc107;
     border-bottom: 3px solid transparent;
     border-top: 3px solid transparent;
-    -webkit-animation: animate-rotate 600ms linear infinite;
-    animation: animate-rotate 600ms linear infinite;
+    -webkit-animation: rotate-10 500ms ease-in-out infinite;
+    animation: rotate-10 500ms ease-in-out infinite;
   }
 
-  @-webkit-keyframes animate-rotate {
+  @-webkit-keyframes rotate-10 {
     0% {
       -webkit-transform: rotateZ(0deg);
       transform: rotateZ(0deg);
@@ -25,7 +25,7 @@
     }
   }
 
-  @keyframes animate-rotate {
+  @keyframes rotate-10 {
     0% {
       -webkit-transform: rotateZ(0deg);
       transform: rotateZ(0deg);
