@@ -16,6 +16,9 @@ import loader14 from './loader-14';
 import loader15 from './loader-15';
 import loader16 from './loader-16';
 import loader17 from './loader-17';
+import loader18 from './loader-18';
+import loader19 from './loader-19';
+import loader20 from './loader-20';
 
 export default [
   loader0,
@@ -36,4 +39,7 @@ export default [
   loader15,
   loader16,
   loader17,
+  loader18,
+  loader19,
+  loader20,
 ];
